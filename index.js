@@ -10,6 +10,28 @@ const generateLogo = ()=> {
     let text, textColor, selectedShape, shapeColor;
 }
 
+getUserInput([
+    {
+        type: 'input',
+        name: 'text',
+        message: 'Enter 3 characters for text',
+    },
+    {
+        type: 'input',
+        name: 'textColor',
+        message: 'Enter textColor',
+    },
+    {
+        type: 'checkbox',
+        name: 'shapeChoice',
+        message: 'Choose shape',
+        Choices: [
+            { name: 'Circle', value: '1' },
+            { name: 'Triangle', value: '2' },
+            { name: 'Square', value: '3' }
+        ]
+    }
+])
 //I WANT to generate a simple logo for my projects
 //SO THAT I don't have to pay a graphic designer
 //Acceptance Criteria
